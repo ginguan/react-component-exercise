@@ -1,0 +1,33 @@
+{
+    "A": [
+        {
+            "id": "1",
+            "title": "Abc",
+            "author": {
+                "firstName": "John",
+                "lastName": "Anderson"
+            },
+            "year": 1997
+        },
+        {
+            "id": "2",
+            "title": "Another Book",
+            "author": {
+                "firstName": "Amy",
+                "lastName": "Adams"
+            },
+            "year": 2001
+        }
+    ],
+    "B": [
+        {
+            "id": "3",
+            "title": "Best Book",
+            "author": {
+                "firstName": "Brian",
+                "lastName": "Brown"
+            },
+            "year": 2005
+        }
+    ]
+}
