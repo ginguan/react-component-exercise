@@ -1,0 +1,13 @@
+[
+    {
+      "id": "1",
+      "author": "John Doe",
+      "text": "This is the first blog post written by John Doe."
+    },
+    {
+      "id": "2",
+      "author": "Jane Smith",
+      "text": "Jane's insights on the latest tech trends."
+    }
+  ]
+  
