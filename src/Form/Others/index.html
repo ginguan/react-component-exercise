@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="mobile">mobile:</label>
+        <input type="text" id="mobile" name="mobile" />
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+
+      <div id="error" data-testid="error" style="display: none;">Error</div>
+
+      <table id="contactTable" border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be added here -->
+          <tr>
+            <td>John Doe</td>
+            <td>ma7812121@gmail.com</td>
+            <td>7812499293</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./form.js" type="module"></script>
+  </body>
+</html>

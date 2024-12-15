@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.like-unlike-container {
+  display: flex;
+  gap: 10px;
+}
+
+.like-btn, .unlike-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.like-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.unlike-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.like-btn.active {
+  background: #4caf50;  /* 绿色 */
+  color: #fff;
+}
+
+.unlike-btn.active {
+  background: #f44336; /* 红色 */
+  color: #fff;
+}

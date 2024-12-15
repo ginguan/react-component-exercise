@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141111; /* formerly $black2 */
+  color: aliceblue; /* formerly $white */
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accordion-wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.accordion:not(:last-child) {
+  border-bottom: 1px solid #141111; /* formerly $black2 */
+}
+
+.accordion:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.accordion:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.accordion__header {
+  background-color: #003249; /* formerly $grayish-blue */
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.accordion__header > h4 {
+  font-weight: normal;
+}
+
+.accordion__header .bx {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: aliceblue; /* formerly $white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141111; /* formerly $black2 */
+  font-size: 32px;
+  transition: 400ms all ease-in-out;
+}
+
+.accordion--expand .accordion__header {
+  background-color: #2971af; /* formerly $blue */
+}
+
+.accordion--expand .accordion__header .bx {
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  overflow: hidden;
+  background-color: #202b2f; /* formerly $black */
+  max-height: 0px;
+  padding: 0 16px;
+  opacity: 0;
+  transition: 400ms all ease-in-out;
+}
+
+.accordion--expand .
